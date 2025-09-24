@@ -55,8 +55,8 @@
       border-top: 1px solid #ccc;
     }
 
-    .google { background-color: #db4437; color: white;margin-top: 10px }  
-    .facebook { background-color: #3b5998; color: white;margin-top: 10px }
+    .google { background-color: #db4437; color: white; margin-top: 10px }  
+    .facebook { background-color: #3b5998; color: white; margin-top: 10px }
 
     .footer {
       font-size: 14px;
@@ -68,40 +68,37 @@
       text-decoration: none;
     }
 
-    /* Regras de senha */
-    .password-rules {
-      text-align: left;
-      font-size: 12px;
-      color: #777;
-      list-style: none;
-      padding-left: 0;
-      margin: 0 0 10px 0;
+    .password-container {
+      position: relative;
     }
 
-    .password-rules li::before {
-      content: "✖ ";
-      color: red;
+    .toggle-senha {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: #0b6426;
     }
-
-    .password-rules li.valid::before {
-      content: "✔ ";
-      color: green;
-    }
+ 
   </style>
 </head>
 <body>
-
 <div class="login-container">
   <h2>Acesse a sua conta</h2>
-<form action="processa_dados.php" method="post">
-  <form>
-    <input type="email" placeholder="E-mail" required>
-    <input type="password" id="senha" placeholder="Senha" required>
+  <form id="loginForm" action="processa_dados.php" method="post">
+    <input type="email" name="email" id="email" placeholder="E-mail" required>
 
-   <a href="index.html" style="text-decoration: none;">
-  <button type="button">Continuar</button>
-</a>
+    <div class="password-container">
+  <input type="password" name="senha" id="senha" placeholder="Senha" required>
+
+    <button type="submit">Continuar</button>
   </form>
+
+  
 
   <div class="divider"></div>
 
@@ -113,8 +110,6 @@
 
   <div class="footer">
     <p>Não tem uma conta? <a href="cadastra-se.html">Cadastre-se</a></p>
+    <p><a href="index.html">Voltar para pagina inicial</a></p>
   </div>
 </div>
-
-</body>
-</html>

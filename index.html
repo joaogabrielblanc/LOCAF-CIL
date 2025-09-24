@@ -1,116 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LocaFácil - Caçambas</title>
-<link rel="stylesheet" href="style.css">
- <link rel="icon" href="ChatGPT-Image-15-de-jun.-de-2025_-22_33_24.ico" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaFácil - Aluguel de Caçambas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-dumpster"></i>
+                <span>LocaFácil</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar caçambas...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button class="cta-btn" onclick="location.href='login.html'">
+                    <i class="fas fa-user"></i>
+                    Login
+                </button>
+                <button class="cta-btn" onclick="location.href='afiliados.html'">
+                    <i class="fas fa-user-friends"></i>
+                    Afiliados
+                </button>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Descarte Responsável, Cidade Mais Limpa</h1>
+                    <p class="hero-subtitle">Alugue sua caçamba com rapidez e segurança! Fazemos o descarte correto dos materiais, preservando o meio ambiente.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary">
+                            <i class="fas fa-calculator"></i>
+                            Calcular Orçamento
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-play"></i>
+                            Ver Como Funciona
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <i class="fas fa-dumpster"></i>
+                        <span>Caçambas Disponíveis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Descarte Sustentável</h3>
+                        <p>Fazemos o descarte correto dos materiais, preservando o meio ambiente para as futuras gerações.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Produtos Selecionados</h3>
+                        <p>Caçambas escolhidas com cuidado para garantir máxima durabilidade e sua completa satisfação.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Suporte 24/7</h3>
+                        <p>Atendimento disponível 24 horas para garantir que você tenha sempre apoio quando precisar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Tipos de Caçambas Disponíveis</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Resíduos de Obra</h3>
+                        <p>Solução ideal para resíduos de construção e reformas. Descarte seguro de entulho e materiais de construção.</p>
+                        <button class="service-btn" onclick="location.href='Saibamais_construçao.html'">Saiba Mais</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Resíduos Orgânicos</h3>
+                        <p>Perfeita para descarte de resíduos orgânicos e vegetação. Contribua para a compostagem sustentável.</p>
+                        <button class="service-btn" onclick="location.href='Saibamais_construçao.html'">Saiba Mais</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                        <h3>Móveis e Objetos</h3>
+                        <p>Ideal para descarte consciente de móveis antigos e objetos volumosos. Reciclagem responsável garantida.</p>
+                        <button class="service-btn" onclick="location.href='Saibamais_construçao.html'">Saiba Mais</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Resíduos de Gesso</h3>
+                        <p>Evite poluir o meio ambiente descartando gesso de forma correta e ambientalmente responsável.</p>
+                        <button class="service-btn" onclick="location.href='Saibamais_construçao.html'">Saiba Mais</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <i class="fa-solid fa-wine-glass-empty"></i>
+                        </div>
+                        <h3>Resíduos de Vidro</h3>
+                        <p>Destinação adequada para resíduos de vidro com total segurança e processo de reciclagem especializado.</p>
+                        <button class="service-btn" onclick="location.href='Saibamais_construçao.html'">Saiba Mais</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3>Resíduos Plásticos</h3>
+                        <p>Descubra a solução ideal para resíduos plásticos com processo certificado de reciclagem.</p>
+                        <button class="service-btn" onclick="location.href='Saibamais_construçao.html'">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
   
+        <div class="footer">
+           
+                <div class="footer-links">
+                    <a href="#">Trabalhe conosco</a>
+                    <a href="#">Termos e condições</a>
+                    <a href="#">Promoções</a>
+                    <a href="#">Como cuidamos da sua privacidade</a>
+                    <a href="#">Acessibilidade</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Informações sobre seguros</a>
+                    <a href="#">Programa de Afiliados</a>
+                </div>
+                
+                <div class="footer-whatsapp">
+                    <div class="footer-contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 99999-9999</span>
+                    <button class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Falar no WhatsApp
+                    </button>
+                <p>Copyright © 1999-2025 LocaFácil.com Br LTDA.</p>
+                <p>CNPJ nº 00.000.000/0001-00 | Licença Ambiental nº 123456 - São Paulo, SP - CEP 00000-000 - empresa do grupo LocaFácil.</p>
+            </div>
+        </div>
+    </footer>
 
-   <div class="topo">
-    <div class="fundo">
-       <input type="text" placeholder="Pesquisar..." id="pesquisaInput" />
-       
-    <p> Manter a cidade limpa começa pelo descarte correto. Alugue sua caçamba com rapidez e segurança!</p>
-    <div class="topo-btn">
-      <button onclick="window.location.href='cadastreloja.html'">Cadastre sua loja</button>
-      <button onclick="window.location.href='alugue.html'">Alugue sua Caçamba</button>
-      <button onclick="window.location.href='login.html'">Faça seu login</button>
-    </div>
-    </div>
-  </div>
-  
-  
-
-  <div class="section">
-    <h2>Serviços e Benefícios</h2>
-    <div class="cards-container">
-      <div class="card">
-        <h3>Sustentabilidade</h3>
-        <img src="recycling_130dp_48752C_FILL0_wght400_GRAD0_opsz48.png" alt="Sustentabilidade" class="small-img">
-        <p>Fazemos o descarte correto dos materiais, preservando o meio ambiente.</p>
-        
-      </div>
-      <div class="card">
-        <h3>Qualidade</h3>
-        <img src="workspace_premium_130dp_F9DB78_FILL0_wght400_GRAD0_opsz48.png" alt="Qualidade"class="small-img">
-        <p>Produtos escolhidos com cuidado para garantir durabilidade e satisfação.</p>
-        
-      </div>
-      <div class="card">
-        <h3>Suporte</h3>
-        <img src="support_agent_130dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="Suporte"class="small-img">
-        <p>Atendimento 24h para garantir que você tenha sempre apoio quando precisar.</p>
-        
-      </div>
-    </div>
-
-    <h2 style="margin-top: 40px;">Tipos de Caçamba</h2>
-    <div class="cards-container">
-      <div class="card">
-        <img src="obras.webp" alt="Caçamba para Construção">
-        <h3>Construção</h3>
-        <p>Ideal para resíduos de obras e durante reformas.</p>
-        <button onclick="window.location.href='Saibamais_construçao.html'">Saiba mais</button>
-      </div>
-      <div class="card">
-        <img src="jard.jpeg" alt="Caçamba para Jardinagem">
-        <h3>Jardinagem</h3>
-        <p>Descubra a caçamba ideal para resíduos orgânicos e vegetação.</p>
-        <button onclick="window.location.href='Saibamais_construçao.html'">Saiba mais</button>
-      </div>
-      <div class="card">
-        <img src="moveis.jpeg" alt="Caçamba para Móveis">
-        <h3>Móveis</h3>
-        <p>Perfeita para descarte consciente de móveis velhos.</p>
-        <button onclick="window.location.href='Saibamais_construçao.html'">Saiba mais</button>
-      </div>
-      <div class="card">
-        <img src="gesso.jpeg" alt="Caçamba para Gesso">
-        <h3>Gesso</h3>
-        <p>Evite poluir descartando gesso de forma correta.</p>
-        <button onclick="window.location.href='Saibamais_construçao.html'">Saiba mais</button>
-      </div>
-      <div class="card">
-        <img src="vidro.jpg" alt="Caçamba para Vidro">
-        <h3>Vidro</h3>
-        <p>Dê a destinação adequada aos resíduos de vidro.</p>
-        <button onclick="window.location.href='Saibamais_construçao.html'">Saiba mais</button>
-      </div>
-       <div class="card">
-        <img src="plastic.jpg" alt="Tipos de Caçamba">
-        <h3>Plástico</h3>
-        <p>Descubra a caçamba ideal para resíduos plásticos.</p>
-        <button onclick="window.location.href='Saibamais_construçao.html'">Saiba mais</button>
-      </div>
-    </div>
-
-
-
- </form><footer style="font-family: Arial, sans-serif; font-size: 13px; color: #666; text-align: center; padding: 20px; background-color: #f9f9f9;">
-  <div style="margin-bottom: 10px;">
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Trabalhe conosco</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Termos e condições</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Promoções</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Como cuidamos da sua privacidade</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Acessibilidade</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Contato</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Informações sobre caçambas</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Programa para empresas</a>
-    <a href="#" style="margin: 0 10px; color: #000; text-decoration: none;">Lista de preços</a>
-  </div>
-
-  <div style="margin-top: 15px; color: #888;">
-    <p>Copyright © 2025 Ebazar.com.br LTDA.</p>
-    <p>CNPJ nº 11.111.111/0001-12 / Av. Presbiteriana, nº 536, Retiro, VR/RJ - CEP 27281-510 - empresa do grupo LOKAFÁCIl.</p>
-  </div>
-</footer>
-
-  
-
+    <script src="script.js"></script>
 </body>
 </html>
